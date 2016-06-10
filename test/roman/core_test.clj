@@ -29,6 +29,10 @@
   (is (= nil (roman2arabic "sDz")))
   (is (= nil (roman2arabic "Izo"))))
 
+(deftest all-numerals []
+  (is (= 1666 (roman2arabic "MDCLXVI")))
+  (is (= 334 (roman2arabic "IVXLCDM"))))
+
 (deftest single-numerals []
   (is (= 1000 (roman2arabic "M")))
   (is (= 500 (roman2arabic "D")))
